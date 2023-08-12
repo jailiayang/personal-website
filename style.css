@@ -141,13 +141,12 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .social-logos img {
     width: 110px;
     height: 100px;
-    right: 20px;
 }
 
 .linkedin, .github, .email {
