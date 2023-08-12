@@ -19,10 +19,12 @@ body {
 
 /* Existing styles */
 
-/* Add media query for small screens */
-@media (max-width: 768px) {
-    .logo img {
-        width: 15%;
+/* ... (your existing code) ... */
+
+/* Mobile-first responsive design */
+@media (max-width: 767px) {
+    .container {
+        margin-top: 100px; /* Adjust margin for smaller screens */
     }
 
     .navi-buttons {
@@ -31,41 +33,61 @@ body {
         top: auto;
         bottom: 0;
         right: 0;
+        margin: 20px;
     }
 
-    .container {
-        margin-top: 100px; /* Adjust margin for smaller screens */
+    .logo img {
+        width: 20%; /* Adjust logo size */
     }
 
     .home {
-        flex-direction: column; /* Stack content vertically */
+        flex-direction: column;
         align-items: center;
         margin-top: 50px;
     }
 
     .img-container {
-        width: 150px; /* Adjust image container size */
+        width: 150px;
         height: 150px;
     }
 
     .text-container {
         text-align: center;
         align-items: center;
-        margin: 20px; /* Adjust margins */
+        margin: 20px;
     }
 
     .greeting {
-        font-size: 40px; /* Reduce font size */
+        font-size: 40px;
         margin-bottom: -10px;
     }
 
     .welcome {
-        font-size: 55px; /* Reduce font size */
+        font-size: 55px;
         margin-top: 5px;
     }
 
-    /* Adjust other elements' styles as needed */
+    .about-text, .experiences-text, .activities-text, .portfolio-text, .contact-text {
+        margin: 20px; /* Adjust margins */
+    }
+
+    .about-header, .experiences-header, .activities-header, .portfolio-header, .contact-header {
+        font-size: 40px;
+    }
+
+    .about-paragraph, .experiences-paragraph, .activities-paragraph, .portfolio-paragraph, .contact-paragraph {
+        font-size: 24px;
+        line-height: 1.5;
+    }
+
+    .social-logos img {
+        width: 80px; /* Adjust social media logo size */
+        height: 80px;
+    }
 }
+
+/* ... (your existing code) ... */
+
 
 
 .navi-buttons {
